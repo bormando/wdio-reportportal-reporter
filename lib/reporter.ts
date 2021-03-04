@@ -50,7 +50,7 @@ class ReportPortalReporter extends Reporter {
   }
 
   public static addAttribute(key: string, value: string) {
-    sendToReporter(EVENTS.RP_LOG, { key, value });
+    sendToReporter(EVENTS.RP_TEST_ATTRIBUTES, { key, value });
   }
 
   private static reporterName = "reportportal";
